@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+:root{
+
+    /*cores*/
+    --cor01: #181423;
+    --cor02: #F8813E;
+    --cor03: #F6FAF7;
+    --cor04: #344C61;
+    --cor05: #F5F5F7;
+    --cor-shadow: #f8823e81;
+    --cor03-variable: #f6faf7e7;
+    --cor03-variable01: #f6faf7;
+    /*fontes*/
+
+    --fontes-h1-h2: "Bebas Neue", sans-serif;;
+    --fontes-p: "Source Sans 3", sans-serif;
+}
+*{
+    margin: 0;
+}
+header{
+    height: 100px;
+    background-color: var(--cor01);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    font-family: var(--fontes-h1-h2);
+    color: var(--cor03-variable);
+    font-weight: bold;
+    font-size: 31px;
+    margin-left: 150px;
+}
+nav{
+    margin-right: 150px;
+    padding: 10px;
+}
+header a{
+    font-family: var(--fontes-p);
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--cor05);
+    margin-right: 25px;
+    padding: 5px;
+}
+header a:hover{
+    border: 1px solid var(--cor02);
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px var(--cor-shadow);
+    color: var(--cor02);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    transition: .5s;
+}
+.icone-capacete{
+    margin-right: 10px;
+    color: var(--cor02);
+}
+.about-us{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 413px;
+    background-color: #181423;
+}
+.container-text{
+    width: 560px;
+    height: 280px;
+    padding: 20px;
+    background-color: var(--cor03-variable01);
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px var(--cor03);
+    margin-left: 50px;
+}
+.container-text h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5%;
+    font-family: var(--fontes-h1-h2);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.7em;
+    color: #181423;
+    text-align: left;
+}
+.container-text, .conteudo{
+    line-height: 20px;
+    font-family: var(--fontes-p);
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+.container-text, .space{
+    padding-top: 10px;
+}
+.orcamentos{
+    width: 28%;
+    padding: 12px;
+    margin-left: auto;
+    margin-top: 5%;
+    border-radius: 10px;
+    font-family: var(--fontes-p);
+    text-align: center;
+    color: var(--cor05);
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--cor02);
+    cursor: pointer;
+}
+.orcamentos:hover{
+    background-color: var(--cor01);
+    transition: .5s;
+}
+.container-img img{
+    width: 300px;
+}
+.container-img{
+    margin-right: 10%;
+}
+.second-line{
+    height: 400px;
+    background-color: var(--cor03-variable);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #344C61;
+}
+.second-line img{
+    width: 350px;
+}
+.our-worl{
+    width: 471px;
+    height: 288px;
+    padding: 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.our-worl h2{
+    font-family: var(--fontes-h1-h2);
+    font-weight: normal;
+    padding-bottom: 15px;
+    color: var(--cor03);
+    font-size: 40px;
+}
+.our-worl span{
+    color: var(--cor02);
+}
+.our-worl p{
+    font-family: var(--fontes-p);
+    font-weight: normal;
+    color: var(--cor03);
+    line-height: 20px;
+    text-align: left;
+}
+.container-idea{
+    margin-right: 15%;
+}
+.container-idea hr{
+    margin-top: 10px;
+}
+.contact{
+    height: 460px;
+}
+.container-elements{
+    padding-top: 10%;
+}
+.container-elements h2{
+    font-family: var(--fontes-h1-h2);
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.7em;
+    color: #181423;
+}
+.container-elements, .paragrafo{
+    font-family: var(--fontes-p);
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+.container-elements span{
+    font-weight: bold;
+}
+.discord{
+    color: #5562EA;
+    cursor: pointer;
+}
+.discord:hover{
+    text-decoration: underline;
+    transition: .5s;
+}
+.social{
+    color: #F7164D;
+    cursor: pointer;
+}
+.social:hover{
+    text-decoration: underline;
+    transition: .5s;
+}
+.button{
+    font-family: var(--fontes-p);
+    font-weight: bold;
+    color: #F5F5F7;
+    background-color: #2AB13F;
+    border-radius: 15px;
+    text-align: center;
+    width: 100px;
+    margin: 20px auto;
+    padding: 5px;
+    cursor: pointer;
+}
+.botao{
+    padding-top: 10px;
+}
+footer{
+    font-family: var(--fontes-p);
+    font-weight: normal;
+    height: 60px;
+    text-align: center;
+    background-color: var(--cor04);
+    color: var(--cor05);
+    padding-top: 5%;
+
+}
+
